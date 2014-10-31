@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+
+  var faye = new Faye.Client('http://localhost:9292/faye');
+  faye.subscribe("/messages/new", function(data) {
+    eval(data);
+  });
+
+});

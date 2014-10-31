@@ -1,0 +1,22 @@
+Messages
+	id
+	message
+	from_id
+	to_id
+
+Groups
+	id
+	name
+	owner_id
+
+Group Messages
+	id
+	group_id
+	message
+	from_id
+
+Attachments
+	id
+	file
+	attachable_type
+	attachable_id
