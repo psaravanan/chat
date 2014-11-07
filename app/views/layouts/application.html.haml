@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Chat
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag "http://localhost:9292/faye.js"
+    = csrf_meta_tags
+  %body
+    .body_container
+      = yield
+    = render "/shared/c_all_users"

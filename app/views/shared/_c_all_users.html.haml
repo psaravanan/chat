@@ -1,0 +1,7 @@
+.c_users_container
+  .c_username_div
+    %ul
+      - User.all.each do |user|
+        %li= user.name
+  .c_search_user
+    %input{type: :text, name: "c_username"}

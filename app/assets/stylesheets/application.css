@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+	width: 100%;
+}
+
+.body_container{
+	width: 98%;
+	float: left;
+	padding: 5px;
+}
