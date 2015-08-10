@@ -32,6 +32,10 @@ gem "haml-rails"
 gem "faye"
 gem "thin"
 gem 'devise'
+gem 'grape'
+gem "hashie_rails"
+gem "letter_opener", :group => :development
+gem "terminal-table"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

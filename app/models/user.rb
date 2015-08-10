@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-
+  has_many :messages, foreign_key: :from_id
   def name
   	"#{first_name} #{last_name}"
   end

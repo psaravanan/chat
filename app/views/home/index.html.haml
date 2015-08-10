@@ -1,1 +1,9 @@
 %h1 Welcome
+%pre
+	- rows = []
+	- rows << ['One', 1]
+	- rows << ['Two', 2]
+	- rows << ['Three', 3]
+	- table = Terminal::Table.new# :rows => rows
+	- table.add_row ['Two', 2]
+	= table

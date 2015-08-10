@@ -8,5 +8,6 @@
     = csrf_meta_tags
   %body
     .body_container
+      = render "/shared/login_detail"
       = yield
     = render "/shared/c_all_users"

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   get 'home/index'
 
   devise_for :users
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+  mount Twitter::API => '/v1'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
